@@ -104,15 +104,16 @@ button:active {
 #slides {
     width: 50%;
     height: 100vh;
-    overflow: scroll;
+    overflow: hidden; /*this is the tester for the slides*/
     border: 3px solid pink;
     display: flex;
-    
+    transition: 2s;
 }
 
 #slides img {
     height: 960px;
     object-fit: cover;
+    
 }
 
 
