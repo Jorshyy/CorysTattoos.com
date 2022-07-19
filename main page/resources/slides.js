@@ -1,3 +1,41 @@
+/*
+
+var slideIndex = 0;
+
+const showSlides = () => {
+    var i;
+    var slides = document.getElementsByClassName("image");
+    for(i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if(slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+
+showSlides();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 const pic1 = document.getElementsByClassName('image-1')
 const pic2 = document.getElementsByClassName('image-2')
 const pic3 = document.getElementsByClassName('image-3')
