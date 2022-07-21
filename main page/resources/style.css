@@ -10,6 +10,9 @@ body {
 
 
 
+
+
+
 header {
     background-color: black;
     border-bottom: 1px solid white;
@@ -30,6 +33,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#menu i {
+    display: none;
 }
 
 #tabs {
@@ -53,6 +60,59 @@ a:hover {
     color: #b8860b;
     text-decoration: underline;
 }
+
+
+
+@media screen and (max-width: 700px) {
+
+     #desktop-header {
+        display: none;
+        
+    }
+
+
+
+    
+    #phone-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #phone-menu h1 {
+        border: 1px solid white;
+        margin-left: 15px;
+    }
+
+    #phone-menu i {
+        display: block;
+        padding-top: 13px;
+        border: 1px solid green;
+        margin-right: 15px;
+    }
+
+    .box {
+        display: none !important;
+    }
+
+    #phone-box {
+        border: 1px solid green;
+        z-index: 3;
+        border: 1px solid green;
+        
+    }
+
+    .phone-back {
+        width: 100%;
+    }
+        
+    img {
+        width: 100%;
+    }
+
+
+}
+
+
 
 
 
