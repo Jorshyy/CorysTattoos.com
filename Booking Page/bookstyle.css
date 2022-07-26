@@ -1,15 +1,24 @@
-
-
-body {
-    width: 375px;
-    margin: 0px;
+* {
+    box-sizing: border-box;
+    color: #8d721e;
+    /*background-color: #f6eed4;*/
+    background-color: #e4cc80;
 }
 
-@media screen and (min-width: 375px) and (max-width: 400px) {
+body {
+    min-width: 375px;
+    margin: 0px;
+    
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 450px) {
     #phone-menu {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid;
+        
     }
     
     #phone-menu h1 {
@@ -17,10 +26,61 @@ body {
     }
 
     #phone-menu i {
-        
         display: block;
         padding-top: 15px;
         margin-right: 15px;
     }
 
+
+    #book-me {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid;
+    }
+
+    .col {
+        margin-bottom: 100px;
+    }
+
+    form {
+        text-align: center;
+        
+    }
+
+
+    .row {
+        display: inline-block;
+        width: 70%;
+        margin: 10px 0px;
+    }
+
+    .row h1 {
+        float: left;
+        margin-left: 39px;
+        
+    }
+
+    input[type=text], input[type=number], input[type=email], input[type=file] {
+        width: 90%;
+        font-size: 1em;
+        padding: 5px;
+        margin: 10px 0px;
+        border: none;
+        border-bottom: 2px inset;
+    }
+
+    
+    input[type=submit] {
+        font-size: 1em;
+        width: 35%;
+        height: 35px;
+        padding: 5px;
+        margin: 10px 0px 10px 41px; 
+        border-radius: 20px;
+        border: 2px solid;
+        float: left;
+    }
 }
