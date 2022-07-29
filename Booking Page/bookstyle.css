@@ -1,8 +1,13 @@
 * {
-    box-sizing: border-box;
-    color: #8d721e;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: #fc001d;
     /*background-color: #f6eed4;*/
-    background-color: #e4cc80;
+    background-color: rgba(32, 0, 3, .8);
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,76 +16,225 @@ body {
     
 }
 
+/*Code for Nav Bar*/
+nav {
+    height: 80px;
+    width: 100%;
+    background: none;
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    background: none;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    background: none;
+}
 
 
-@media screen and (min-width: 375px) and (max-width: 450px) {
-    #phone-menu {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid;
-        
+
+nav ul li {
+    background: none;
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    background: none;
+}
+
+a.active, a:hover {
+    background: #8b0010;
+    color: white;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #e4cc80;
+    float: right;
+    display: none;
+    line-height: 80px;
+    padding: 0px 50px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+/*
+.col {
+    text-align: center;
+    width: 100%;
+    border: 1px solid;
+}
+
+form {
+    border: 1px solid pink;
+    max-width: 100%;
+}
+
+.row {
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid black;
+}
+*/
+
+
+
+
+
+@media screen and (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
     }
-    
-    #phone-menu h1 {
-        margin-left: 10px;
+
+   
+
+    nav ul li a {
+        font-size: 1em;
     }
 
-    #phone-menu i {
+
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 858px) {
+    .checkbtn {
         display: block;
-        padding-top: 15px;
-        margin-right: 15px;
     }
 
-
-    #book-me {
-        height: 100vh;
+    ul {
+        position: fixed;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: 1px solid;
-    }
-
-    .col {
-        margin-bottom: 100px;
-    }
-
-    form {
+        height: 100vh;
+        background: black !important;
+        top: 80px;
+        left: -100%;
         text-align: center;
-        
+        transition: all .5s;
     }
 
-
-    .row {
-        display: inline-block;
-        width: 70%;
-        margin: 10px 0px;
+    nav ul li {
+        display: block;
     }
 
-    .row h1 {
-        float: left;
-        margin-left: 39px;
-        
+    nav ul li a {
+        font-size: 20px;
     }
 
-    input[type=text], input[type=number], input[type=email], input[type=file] {
-        width: 90%;
-        font-size: 1em;
-        padding: 5px;
-        margin: 10px 0px;
-        border: none;
-        border-bottom: 2px inset;
+    a:hover, a.active {
+        background: none;
+        color: white
     }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
 
     
-    input[type=submit] {
-        font-size: 1em;
-        width: 35%;
-        height: 35px;
-        padding: 5px;
-        margin: 10px 0px 10px 41px; 
-        border-radius: 20px;
-        border: 2px solid;
-        float: left;
-    }
+
+
+}
+
+
+#book-me {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+}
+
+
+.col {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0px;
+}
+
+form {
+    width: 100%;
+}
+
+
+
+.row {
+    display: block;
+    height: auto;
+    width: 80%;
+    margin: 20px auto;
+    
+
+}
+
+
+::placeholder {
+    color: white;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=file] {
+    width: 100%;
+    font-size: 1em;
+    padding: 5px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px inset #fc001d;;
+    background: none;
+}
+
+
+input[type=submit] {
+    font-size: 1em;
+    min-width: 150px;
+    max-width: 300px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid;
+    
+}
+
+
+.row label {
+    border: 1px solid;
+}
+
+#file {
+    display: none;
+}
+
+textarea {
+    width: 100%;
+    border: 2px inset #fc001d;
+    color: white;
+}
+
+input[type=submit]:active, input[type=submit]:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+
+
+footer {
+    border: 1px solid blue;
 }

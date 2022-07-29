@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/dcb6296c66.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./bookstyle.css">
+    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
     <title>Corys Tattoos</title>
 </head>
 
@@ -16,47 +20,71 @@
 <body>
 
     <!--Phone HTML-->
-    <header>
-        <header id="phone-menu">
-            <h1>Cory's Tattoos</h1>
-            <i class="fa-solid fa-bars fa-3x"></i>
-        </header>
-    </header>
+    
+    <nav>
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+
+
+        <label for="logo" class="logo">CORYS TATTOOS</label>
+
+        <ul>
+            <li><a class="active" href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">FEEDBACK</a></li>
+        </ul>
+
+
+
+        
+
+    </nav>
 
 
 
     <main>
 
+
+    
+
         <!--Phone HTML-->
-        <div id="book-me">
-            
-            <div class="col">
-                <form action="" method="post">
-                    <div class="row">
-                        <h1>BOOK</h1>
-                    </div>
-                    <div class="row">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                    </div>
-                    <br>
-                    <div class="row">
-                        <input type="number" name="number" id="number" placeholder="Phone Number">
-                    </div>
-                    <br>
-                    <div class="row">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <br>
-                    <div class="row">
-                        <input type="file" name="file" id="file">
-                    </div>
-                    <br>
-                    <div class="row">
-                        <input type="submit" value="Book Now">
-                    </div>
-                </form>
-            </div>
+
+        <div class="col">
+            <form action="" method="post">
+                <div class="row">
+                    <h1>BOOK W/ ME</h1>
+                </div>
+                <div class="row">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <br>
+                <div class="row">
+                    <input type="number" name="number" id="number" placeholder="Phone Number">
+                </div>
+                <br>
+                <div class="row">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <br>
+                <div class="row">
+                    <label for="file">hello</label>
+                    <input type="file" name="file" id="file" multiple>
+                </div>
+                <br>
+                <div class="row">
+                    <textarea name="" id="" cols="63" rows="5" placeholder="Describe Tattoo and location"></textarea>
+                </div>
+                <br>
+                <div class="row row-btn">
+                    <input type="submit" value="Book Now">
+                </div>
+            </form>
         </div>
+
+       
     </main>
 
     
