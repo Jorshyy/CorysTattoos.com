@@ -9,21 +9,13 @@
     box-sizing: border-box;
     
 }
-html {
-    margin: 0;
-    height: 100%;
-}
 
-
-
-
-body {
-    min-width: 375px;
-    min-height: 100vh;
+html, body {
+    width: 100%;
     margin: 0px;
-    display: flex;
-    flex-direction: column;
 }
+
+
 
 /*Code for Nav Bar*/
 nav {
@@ -83,12 +75,9 @@ a.active, a:hover {
     display: none;
 }
 
-/*end code nav bar*/
-
 @media screen and (max-width: 551px) {
     label.logo {
         font-size: 18px !important;
-        
         display: block;
     }
 
@@ -115,7 +104,7 @@ a.active, a:hover {
 
 
 
-@media screen and (max-width: 914px) {
+@media screen and (max-width: 933px) {
     label.logo{
         position: relative;
         padding-left: 10px;
@@ -160,93 +149,40 @@ a.active, a:hover {
 }
 
 
+@media screen and (max-width: 340px) {
+    label.logo {
+        visibility: hidden;
+    }
+    
+}
 
-#book-me {
-    max-height: 100vh;
+/*end code nav bar*/
+
+
+#map {
+    height: 100vh;
     width: 100%;
+    padding: 10px 0px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    border: 1px solid;
+    align-items: center;
+    overflow: hidden;
+
 }
 
-
-.col {
-    display: block;
-    width: 100%;
-    
-    padding: 20px 0px;
-    overflow: scroll;
-    
-}
-
-form {
-    width: 100%;
-}
-
-
-
-.row {
-    display: block;
-    height: auto;
+#map iframe {
     width: 80%;
-    margin: 20px auto;
-}
-
-
-::placeholder {
-    color: white;
-}
-
-input[type=text], input[type=number], input[type=email], input[type=file] {
-    width: 100%;
-    font-size: 1em;
-    padding: 5px;
-    margin: 10px 0px;
-    border: none;
-    border-bottom: 2px inset #fc001d;;
-    background: none;
-}
-
-
-#file-label {
-    border: 1px solid;
+    height: 100%;
     display: block;
 }
 
 
 
-input[type=submit] {
-    font-size: 1em;
-    min-width: 150px;
-    max-width: 300px;
-    height: 35px;
-    padding: 5px;
-    border-radius: 20px;
-    border: 2px solid;
-    
-}
 
 
 
 
-
-
-textarea {
-    width: 100%;
-    border: 2px inset #fc001d;
-    color: white;
-}
-
-input[type=submit]:active, input[type=submit]:hover {
-    background-color: white;
-    cursor: pointer;
-    transition: .5s;
-}
-
-
-
-
+/*FOOTER CODE*/
 #footer {
     display: grid;
     grid-template-columns: 50%;
@@ -277,4 +213,9 @@ input[type=submit]:active, input[type=submit]:hover {
 
 i {
     margin: 0px 12px;
+    
 }
+
+
+
+
